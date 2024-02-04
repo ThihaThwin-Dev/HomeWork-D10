@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="leftnav">
+                <img src="./gifs/arcade.gif" alt="" class="headergif">
+                <span class="sitename">Arcade</span>
+            </div>
+            <div class="rightnav">
+                <ul>
+                    <li class="retro">Quiz!</li>
+                    <li class="havefun">LeaderBoards</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of header! -->
+    
+    
+    <div id="body">
+        <p class="bodytext">What is <span id="randomNo"> </span>?</p>
+        <table class="grid">
+            <tr>
+                <td id="firstcell" class="cell" onclick="answerPress(this)"></td>
+                <td id="secondcell" class="cell" onclick="answerPress(this)"></td>
+                <td id="thirdcell" class="cell" onclick="answerPress(this)"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons">
+        <button id="startbtn" onclick="start()" class="btnstart activeStart">Start</button>
+        <button id="stopbtn" onclick="stop()" class="btnstop inactiveStop">Stop</button>
+    </div>
+    <div class="main">
+        <p class="score">
+            Score : <span id="scoreBoard">0000000</span>
+        </p>
+        <p class="time">
+            Play Count : <span id="timeplayed">0000000</span>
+        </p>
+    </div>
+    <div>
+        
+    </div>
+    <div class="history">
+        <table>
+            <tr>
+                <td class="highscores">
+                    <h1>Record HighScores!</h1>
+                    <ol>
+                        <li>Max : 00000000</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </td>
+                <td class="yourhighscore">
+                    <ol>
+                        <h1>Your HighScore!</h1>
+                        <span id="history"></span>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    <div class="reset">
+        <button id="resetbtn" onclick="resetAll()">Restart</button>
+    </div>
+
+</body>
+
+</html>
